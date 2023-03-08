@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.img{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+}
+
+.bloque{
+    background: rgb(189,37,91);
+    background: linear-gradient(270deg, rgba(189,37,91,1) 28%, rgb(223, 90, 183) 91%);
+    position: relative;
+    top: 345px;
+    left: 97px;
+    width: 410px;
+    height: 145px;
+    border: 4px solid white;
+    box-shadow: -3px -3px 3px black;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.bloque h2{
+    margin-top:50px;
+    color: rgb(0, 47, 255);
+    text-shadow: -3px -3px 20px rgba(12,32,82,1);
+    font-family: 'anton';
+    letter-spacing: 1.5px;
+}

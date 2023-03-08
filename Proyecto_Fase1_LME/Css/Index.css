@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background: rgb(83,37,189);
+background: linear-gradient(270deg, rgba(83,37,189,1) 28%, rgba(12,32,82,1) 81%);
+    font-family: 'anton',sans-serif;
+}
+
+article{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.texto{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    text-shadow: -3px -3px 2px black;
+    padding-bottom: 20px;
+    letter-spacing: 2.5px;
+}
+.box-container{
+    width: 500px;
+    height: 350px;
+    background: rgb(83,37,189);
+    background: linear-gradient(270deg, rgba(83,37,189,1) 28%, rgba(12,32,82,1) 81%);
+    border-radius: 10px ;
+    box-shadow: -3px -3px 100px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: .5s;
+    color: white;
+    letter-spacing: 1.2px;
+    font-size: 20px;
+}
+
+ .inputs input{
+    width: 200px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    transition: .5s;
+    border-radius: 10px;
+}
+.box-container > a{
+    color: white;
+}
+
+
+.box-container .inputs .sesion{
+    color: white;
+    outline: 3px solid white;
+    background-color: rgb(70, 0, 209);
+    cursor: pointer;
+} 
+
+.box-container:hover{
+    box-shadow: -3px -3px 20px black;
+}
+
+/* Fondo animado */
+
+.animacion_fondo{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background-color: white;
+    position: absolute;
+    filter: blur(10px);
+    z-index: -1;
+    animation: fondo 5s linear infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.animacion_fondo:nth-child(1){
+    left: 190px;
+    top: 200px;
+    animation-delay: 1.80s;
+}
+
+.animacion_fondo:nth-child(2){
+    animation-delay: .60s;
+    left: 700px;
+}
+
+.animacion_fondo:nth-child(3){
+    width: 200px;
+    height: 200px;
+    left:950px;
+    animation-delay: 1.2s;
+    top: 100px ;
+}
+
+@keyframes fondo{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(50px  );
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
